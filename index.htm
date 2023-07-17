@@ -4,11 +4,16 @@
 <meta charset="utf-8">
 <title>GIPEAFRICA</title>
 <link href="index.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link href="css/owl.theme.default.css" type="text/css" rel="stylesheet">
 <script
       src="https://kit.fontawesome.com/ecf5c1768c.js"
       crossorigin="anonymous"
     ></script>
 	<style>
+		
+		
+		
 		.header{
 			width: 100%;
 		}
@@ -240,7 +245,7 @@
 		}
 		h3{
 			font-size: 35px;
-			font-family: cookie;
+			font-family: cursive;
 /*			border: 1px solid*/
 				
 		}
@@ -678,6 +683,32 @@ function showSlides() {
 		<h4>We've worked in iconic natural settings, historic towns, and growing cities, across East Africa.</h4>
 	</div>
 </div>
+	<div class="owl-carousel owl-theme">
+	 <div class="item">
+		<img src="images/new/gipea2.png">	
+	 </div>
+		<div class="item">
+		<img src="images/new/gipea2.png">	
+	 </div>
+		<div class="item">
+		<img src="images/new/gipea1-1.png">	
+	 </div><div class="item">
+		<img src="images/new/p1.jpg">	
+	 </div>
+		<div class="item">
+		<img src="images/new/p2.jpg">	
+	 </div>
+		<div class="item">
+		<img src="images/new/p3.jpg">	
+	 </div>
+		<div class="item">
+		<img src="images/new/p1.jpg">	
+	 </div>
+	</div>
+	
+	
+	
+<!--
 <div class="clients">
 	<h3>Some of our clients</h3>
 	<div class="cards">
@@ -687,6 +718,7 @@ function showSlides() {
 		<img src="images/new/p3.jpg">
 	</div>
 </div>
+-->
 <div class="footer">
 	<div class="row-1">
 		<div class="col">
@@ -737,7 +769,26 @@ function showSlides() {
 		<p>Copyright 2021 Gipea Africa Limited, All Rights Reserved - Site developed by <span>Index Hosting</span> </p>
 	</div>
 	
-	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script>
+		var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:10,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+	</script>
 </div>
 	
 </body>
